@@ -1,0 +1,70 @@
+# install dbt
+
+## Create directory
+```dtd
+mkdir c:\workspace\bi\dbt_project
+cd c:\workspace\bi\dbt_project
+```
+
+## Create virtual environment
+```dtd
+py -m venv dbt_venv
+```
+
+## Activate virtual environment - Windows
+```dtd
+ .\dbt_venv\Scripts\Activate.ps1
+ ```
+for linux
+```dtd
+source dbt_venv/bin/activate
+ ```
+
+## Install BigQuery
+```dtd
+pip install dbt-bigquery
+```
+
+## Create .dbt folder
+in order to save the profile.yml file
+```dtd
+mkdir C:\Users\USER_NAME\.dbt
+```
+
+## Create service account with edit permission
+Go to Google cloud console
+
+create SA and download it as JSON file with Edit Permission
+```dtd
+https://console.cloud.google.com/iam-admin/iam
+```
+
+## Init dbt project
+```dtd
+dbt init
+```
+
+##  Get service account path
+```dtd
+C:\Users\USER_NAME\Downloads\Your_Service_account.json
+```
+
+## Change directory to dbt_tutorial
+```dtd
+cd dbt_tutorial
+```
+
+## Check connection
+```dtd
+dbt debug
+```
+
+## Run the dbt
+```dtd
+dbt run
+```
+
+## Open profile.yml file
+```dtd
+C:\Users\USER_NAME\.dbt\profiles.yml
+```

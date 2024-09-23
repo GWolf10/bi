@@ -1,0 +1,22 @@
+
+version: 2
+
+models:
+  - name: citi_trips_rental
+    description: "A cleaned version of the citibike trips table"
+    columns:
+      - name: name
+        description: "The name of the citibike station"
+        data_tests:
+          - unique
+          - not_null
+      - name: renatl_method
+        description: "The method of rental"
+        data_tests:
+          - not_null
+      - name: Total_trips
+        description: "The total number of trips"
+        data_tests:
+          - not_null
+
+

@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: customers
+    description: "this is a model of the customers table"
+    columns:
+      - name: customer_id
+        description: "the id of the customer"
+        data_tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: "the first name of the customer"
+        data_tests:
+          - not_null
+      - name: last_name
+        description: "the last name of the customer"
+        data_tests:
+          - not_null
+      - name: first_order_date
+        description: "the date of the first order"
+        data_tests:
+          - not_null
+      - name: number_of_orders
+        description: "the number of orders"
