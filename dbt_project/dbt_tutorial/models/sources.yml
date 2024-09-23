@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: citi
+    database: bigquery-public-data
+    schema: new_york_citibike
+    tables:
+      - name: stations
+        identifier: citibike_stations
+      - name: trips
+        identifier: citibike_trips
+
+  - name: jaffle_shop
+    database: dbt-tutorial
+    schema: jaffle_shop
+    freshness:
+      warn_after: {count: 12, period: hour}
+      error_after: {count: 24, period: hour}
+    tables:
+      - name: orders
+      - name: customers
+
