@@ -1,0 +1,36 @@
+{
+  "delete_from_table": {
+    "file_name": "delete_from_table",
+    "table_src": "daily_user_panel",
+    "dataset_src": "panels",
+    "partition_att": "dt",
+    "description": "Delete the daily data before insert new one, in order to avoid duplications"
+  },
+  "update": {
+    "file_name": "update_user_panel",
+    "table_src": "daily_user_panel",
+    "dataset_src": "panels",
+    "table_dst": "user_panel",
+    "dataset_dst": "panels",
+    "description": "Update the active users in the user panel",
+    "partition_att": "dt"
+  },
+  "insert": {
+    "file_name": "insert_user_panel",
+    "table_src": "daily_user_panel",
+    "dataset_src": "panels",
+    "table_dst": "user_panel",
+    "dataset_dst": "panels",
+    "description": "Insert new users to the user panel",
+    "partition_att": "dt"
+  },
+  "create_table": {
+    "file_name": "create_user_panel",
+    "table_src": "daily_user_panel",
+    "dataset_src": "panels",
+    "table_dst": "user_panel",
+    "dataset_dst": "panels",
+    "description": "Contains Life time aggregated KPIs for every active user",
+    "partition_att": "dt"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "fact_etl": {
+    "init": [
+      "create_table"
+    ],
+    "daily": [
+      "delete_from_table",
+      "daily"
+    ],
+    "delete": [
+      "delete_from_table"
+    ]
+  },
+  "daily_panel_etl": {
+    "init": [
+      "create_table"
+    ],
+    "daily": [
+      "delete_from_table",
+      "daily"
+    ],
+    "delete": [
+      "delete_from_table"
+    ]
+  },
+  "user_panel_etl": {
+    "init": [
+      "create_table"
+    ],
+    "daily": [
+      "update",
+      "insert"
+    ],
+    "delete": [
+      "delete_from_table"
+    ]
+  }
+}
