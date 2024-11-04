@@ -1,0 +1,27 @@
+{
+  "delete_from_table": {
+    "file_name": "delete_from_table",
+    "table_src": "fact2",
+      "dataset_src": "raw_data",
+    "partition_att": "DATE(pickup_datetime)",
+    "description": "Delete the daily data before insert new one, in order to avoid duplications"
+  },
+  "daily": {
+    "file_name": "daily_fact",
+    "table_src": "tlc_yellow_trips_2022",
+    "dataset_src": "new_york_taxi_trips",
+    "table_dst": "fact2",
+    "dataset_dst": "raw_data",
+    "description": "add data from source to fact table",
+    "partition_att": "DATE(pickup_datetime)"
+  },
+  "create_table": {
+    "file_name": "create_table",
+    "table_src": "tlc_yellow_trips_2022",
+    "dataset_src": "new_york_taxi_trips",
+    "table_dst": "fact2",
+    "dataset_dst": "raw_data",
+    "description": "raw data of all taxi drivers",
+    "partition_att": "DATE(pickup_datetime)"
+  }
+}

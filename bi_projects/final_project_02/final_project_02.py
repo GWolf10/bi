@@ -26,22 +26,22 @@ Execution commands:
 --------------------
 fact_etl
 _______________
-python ./bi_projects/final_project_01/final_project_01.py  strange-bay-433318-g0 --etl-action init --etl-name fact_etl
-python ./bi_projects/final_project_01/final_project_01.py  strange-bay-433318-g0 --etl-action delete --etl-name fact_etl
-python ./bi_projects/final_project_01/final_project_01.py  strange-bay-433318-g0 --etl-action daily --etl-name fact_etl
+python ./bi_projects/final_project_02/final_project_02.py  strange-bay-433318-g0 --etl-action init --etl-name fact_etl
+python ./bi_projects/final_project_02/final_project_02.py  strange-bay-433318-g0 --etl-action delete --etl-name fact_etl
+python ./bi_projects/final_project_02/final_project_02.py  strange-bay-433318-g0 --etl-action daily --etl-name fact_etl
 
 daily_panel_etl
 _______________
-python ./bi_projects/final_project_01/final_project_01.py  strange-bay-433318-g0 --etl-action init --etl-name daily_panel_etl
-python ./bi_projects/final_project_01/final_project_01.py  strange-bay-433318-g0 --etl-action delete --etl-name daily_panel_etl
-python ./bi_projects/final_project_01/final_project_01.py  strange-bay-433318-g0 --etl-action daily --etl-name daily_panel_etl
+python ./bi_projects/final_project_02/final_project_02.py  strange-bay-433318-g0 --etl-action init --etl-name daily_panel_etl
+python ./bi_projects/final_project_02/final_project_02.py  strange-bay-433318-g0 --etl-action delete --etl-name daily_panel_etl
+python ./bi_projects/final_project_02/final_project_02.py  strange-bay-433318-g0 --etl-action daily --etl-name daily_panel_etl
 
 
 user_panel_etl
 _______________
-python ./bi_projects/final_project_01/final_project_01.py  strange-bay-433318-g0 --etl-action init --etl-name user_panel_etl
-python ./bi_projects/final_project_01/final_project_01.py  strange-bay-433318-g0 --etl-action delete --etl-name user_panel_etl
-python ./bi_projects/final_project_01/final_project_01.py  strange-bay-433318-g0 --etl-action daily --etl-name user_panel_etl
+python ./bi_projects/final_project_02/final_project_02.py  strange-bay-433318-g0 --etl-action init --etl-name user_panel_etl
+python ./bi_projects/final_project_02/final_project_02.py  strange-bay-433318-g0 --etl-action delete --etl-name user_panel_etl
+python ./bi_projects/final_project_02/final_project_02.py  strange-bay-433318-g0 --etl-action daily --etl-name user_panel_etl
 
 """
 

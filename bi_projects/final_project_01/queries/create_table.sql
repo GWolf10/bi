@@ -9,8 +9,8 @@ init table by parameters
 CREATE OR REPLACE TABLE
   `{project_id}.{dataset_dst}.{table_dst}`
 PARTITION BY
-  --dt
-  {partition_field}
+  dt
+  --{partition_field}
   OPTIONS( description="{description}")
   AS
 SELECT

@@ -2,11 +2,11 @@
 Description
 Append data to Daily User Panel - For main KPIs
 
-2024-10-14 12:02:06
+{run_time}
 */
 
 Insert into
-  `strange-bay-433318-g0.panels.daily_user_panel`
+  `{project_id}.{dataset_dst}.{table_dst}`
 
 -- Main KPIs
 SELECT
@@ -20,8 +20,8 @@ SELECT
   SUM(price_numeric) as t_revenue,
   SUM(GemsEarned) as t_GemsEarned,
   SUM(XpEarned) as t_XpEarned,
-FROM `strange-bay-433318-g0.raw_data.fact`
-WHERE dt = '2024-10-13'
+FROM `{project_id}.{dataset_src}.{table_src}`
+WHERE {partition_att} = '{date}'
 GROUP BY
   all
 
@@ -30,10 +30,10 @@ GROUP BY
 /*
 -- Validation
 SELECT
-  dt,
+  {partition_att},
   COUNT(1)
-FROM `strange-bay-433318-g0.panels.daily_user_panel`
-WHERE dt = '2024-10-13'
+FROM `{project_id}.{dataset_dst}.{table_dst}`
+WHERE {partition_att} = '{date}'
 GROUP BY
   1
 ORDER BY

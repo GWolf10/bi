@@ -2,9 +2,8 @@
   "delete_from_table": {
     "file_name": "delete_from_table",
     "table_src": "daily_user_panel",
-    "dataset_src": "panels",
+    "dataset_src": "panels2",
     "partition_att": "dt",
-    "partition_field": "dt",
     "description": "Delete the daily data before insert new one, in order to avoid duplications"
   },
   "daily": {
@@ -12,19 +11,17 @@
    "table_src": "fact",
     "dataset_src": "raw_data",
     "table_dst": "daily_user_panel",
-    "dataset_dst": "panels",
+    "dataset_dst": "panels2",
     "description": "add  aggregated data from source to daily user panel table",
-    "partition_att": "dt",
-    "partition_field": "dt"
+    "partition_att": "dt"
   },
   "create_table": {
     "file_name": "create_daily_user_panel",
     "table_src": "fact",
     "dataset_src": "raw_data",
     "table_dst": "daily_user_panel",
-    "dataset_dst": "panels",
+    "dataset_dst": "panels2",
     "description": "containes daily aggregated KPIs for every active user",
-    "partition_att": "dt",
-    "partition_field": "dt"
+    "partition_att": "dt"
   }
 }
