@@ -5,4 +5,4 @@
 
 cd ~/workspace/bi
 
-python ./bi_projects/final_project_01/final_project_01.py strange-bay-433318-g0 --etl-action daily --etl-name fact_etl
+python3 ./bi_projects/final_project_01/final_project_01.py strange-bay-433318-g0 --etl-action daily --etl-name fact_etl
